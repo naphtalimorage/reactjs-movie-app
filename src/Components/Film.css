@@ -1,0 +1,46 @@
+.movie-item {
+    width: 160px;
+    height: 280px;
+    position: relative;
+    padding: 0px 8px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    text-align:start;
+
+}
+
+
+.movie-item img {
+    width: 100%; 
+    height: 230px;
+    border-radius: 4px;
+}
+
+#head1 {
+    color: rgb(12, 12, 12);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight:00;
+    position: relative;
+    bottom: 12px;
+    margin-left: 4px;
+}
+#head2 {
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    font-weight:400;
+    position: relative;
+    bottom: 25px;
+    margin-left: 4px;
+}
+
+/* #rating {
+    position: absolute;
+    bottom: 226px;
+    right: 0px;
+    padding: 8px;
+}
+ */
