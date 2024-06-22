@@ -1,0 +1,11 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+button {
+    width: 100px;
+    font-size: 17px;
+}
+
