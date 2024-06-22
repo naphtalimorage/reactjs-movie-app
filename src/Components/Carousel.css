@@ -1,0 +1,38 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: relative;
+  min-width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 211, 211, 0.5); /* Light color overlay */
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: relative;
+  z-index: 2;
+  color: #000; /* Change text color to stand out against the light overlay */
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for text */
+  border-radius: 10px;
+}
