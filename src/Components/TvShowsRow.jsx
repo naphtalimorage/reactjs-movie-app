@@ -9,8 +9,8 @@ const TvShowsRow = ({ category, tvshows }) => {
       <div className='movie-row'>
         {tvshows.map((tvshow) => (
           <div  className='movie-item' key={tvshow.id}>
-            <Film  filmId={tvshow.id} filmTitle={tvshow.name} rating={tvshow.vote_average} releaseDate={tvshow.first_air_date} posterUrl={tvshow.poster_path} alt={tvshow.name} filmtype={"tvshow"}/>
-          </div>
+            <Film  filmId={tvshow.id} filmTitle={tvshow.name} rating={tvshow.vote_average} releaseDate={tvshow.first_air_date} posterUrl={tvshow.poster_path} alt={tvshow.name} filmtype={"tv"}/>
+          </div> 
           
           ))}
         </div>
