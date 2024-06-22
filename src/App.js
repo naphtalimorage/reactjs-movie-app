@@ -20,7 +20,7 @@ const App = () => {
       />
         <Routes>
           <Route path="/"    element={currentPage === "movies" ? (<MoviesPage/> ) : (<TvShowsPage/>)} />
-          <Route path="/FilmDetails/:filmId" element={<FilmDetails />} />
+          <Route path="/FilmDetails/:filmId/:filmtype" element={<FilmDetails />} />
         </Routes>
     </div>
   );
