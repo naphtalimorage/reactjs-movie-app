@@ -1,5 +1,5 @@
 .movie-details {
-    color: white;
+    color: rgb(7, 7, 7);
     height: 120vh;
     
 }
@@ -14,28 +14,28 @@
 
 #title {
     position: absolute;
-    top: 20px;
+    top: 90px;
     left: 370px;
     font-family: serif;
 }
 
 #date {
     position: absolute;
-    top: 105px;
+    top: 170px;
     left: 370px;
 }
 
 #date h4 {
     position: relative;
-    bottom: 15px;
+    bottom: 20px;
     left: 12px;
     font-weight: 200;
 }
 
 #rating {
     position: absolute;
-    top: 160px;
-    left: 360px; 
+    top: 220px;
+    left: 370px; 
 }
 
 .rate-img {
