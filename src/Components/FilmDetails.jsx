@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./MovieDetails.css";
+import "./FilmDetails.css";
 // import MovieDetailsRating from "./MovieDetailsRating";
 
 const FilmDetails = () => {

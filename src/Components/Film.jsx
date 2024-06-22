@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Film = ({ filmId, filmTitle, posterUrl, releaseDate, rating, alt,filmtype }) => {
   return (
     <div className="movie-item">
-      <Link to={`/MovieDetails/${filmId}/${filmtype}`}>
+      <Link to={`/FilmDetails/${filmId}/${filmtype}`}>
         <img src={`https://image.tmdb.org/t/p/w500${posterUrl}`} alt={alt} />
       </Link>
       <h3 id="head1">{filmTitle}</h3>
