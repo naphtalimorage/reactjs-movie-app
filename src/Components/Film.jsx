@@ -3,7 +3,7 @@ import RatingIndicator from "./RatingIndicator";
 import "./Film.css";
 import { Link } from "react-router-dom";
 
-const Film = ({ filmId, filmTitle, posterUrl, releaseDate, rating, alt,filmtype }) => {
+const Film = ({ filmId, filmTitle, posterUrl, releaseDate, rating, alt,filmtype}) => {
   return (
     <div className="movie-item">
       <Link to={`/FilmDetails/${filmId}/${filmtype}`}>
