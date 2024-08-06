@@ -12,7 +12,7 @@ const MoviesPage = () => {
   const endpoint2= "popular";
   const endpoint3= "top_rated";
   const endpoint4= "upcoming";
-
+ 
   const {data: nowPlayingMovies,error: error1,loading: loading1}=useFetch(endpoint1,API_KEY);
   const {data: popularMovies,error: error2,loading:loading2}= useFetch(endpoint2,API_KEY); 
   const {data: topRatedMovies,error:error3,loading:loading3}=useFetch(endpoint3,API_KEY); 

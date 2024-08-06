@@ -1,26 +1,28 @@
 import React from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import FilmDetails from "./Components/FilmDetails";
-import SearchBar from "./Components/SearchBar";
 import NavBar from "./Components/NavBar";
 import MoviesPage from "./Components/MoviesPage";
 import TvShowsPage from "./Components/TvShowsPage";
 import { useState } from "react";
+import SearchResults from "./Components/SearchResults";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("movies");
-  
+  const location = useLocation();
+  const showNavBar = !location.pathname.includes("/FilmDetails");
+
   return (
     <div className="app-container">
-      {/* <SearchBar /> */}
-      <NavBar
+      {showNavBar && <NavBar
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
-      />
+      />}
         <Routes>
           <Route path="/"    element={currentPage === "movies" ? (<MoviesPage/> ) : (<TvShowsPage/>)} />
           <Route path="/FilmDetails/:filmId/:filmtype" element={<FilmDetails />} />
+          <Route path="/search/:query" element={<SearchResults />} />
         </Routes>
     </div>
   );

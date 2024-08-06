@@ -15,7 +15,7 @@ const MovieRow = ({ category, movies }) => {
             <Film  filmId={movie.id} filmTitle={movie.title} rating={movie.vote_average} releaseDate={movie.release_date} posterUrl={movie.poster_path} alt={movie.title} filmtype={"movie"}/>
           </div>
           );        
-        })};
+        })}; 
       </div>
       
     </div>

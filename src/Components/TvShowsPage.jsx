@@ -16,8 +16,8 @@ const TvShowsPage = () => {
   const {data: ontheAirTvShows,error: error2,loading:loading2}= useFetch(endpoint2,API_KEY); 
   const {data: popularTvShows,error:error3,loading:loading3}=useFetch(endpoint3,API_KEY); 
   const {data: topratedTvShows,error:error4,loading:loading4}=useFetch(endpoint4,API_KEY);
-  if(loading1,loading2,loading3,loading4) return <div>Loading...</div>
-  if(error1,error2,error3,error4) return <div>Error: {error1},{error2},{error3},{error4}</div>
+  if(loading1 || loading2 || loading3 || loading4) return <div>Loading...</div>
+  if(error1 || error2 ||error3 || error4) return <div>Error: {error1},{error2},{error3},{error4}</div>
 
 
   const airingTodayCategory = "Airing Today";

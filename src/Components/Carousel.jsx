@@ -4,8 +4,6 @@
 // import "slick-carousel/slick/slick-theme.css";
 // import './Carousel.css';
 
-
-
 // const Carousel = ({movies}) => {
 //     const settings = {
 //         dots: true,
@@ -16,7 +14,6 @@
 //         autoplay: true,
 //         autoplaySpeed: 2000,
 //       };
-
 
 //   return (
 //     <div className='carousel-container'>
@@ -38,28 +35,17 @@
 
 import React from "react";
 import "./Carousel.css";
+import SearchBar from "./SearchBar";
+import "./SearchBar.css";
 
-const Carousel = ({ movies }) => {
+const Carousel = () => {
   return (
-    <div className="carousel">
-      {movies.map((movie) => (
-        <div
-          className="carousel-item"
-          key={movie.id}
-          style={{
-            backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
-          }}
-        >
-          <div className="overlay"></div>
-          <div className="carousel-caption">
-            <h2>{movie.title}</h2>
-            <p>{movie.overview}</p>
-          </div>
-        </div>
-      )  )}
+    <div className="carousel-container">
+      <div className= "search-bar"> 
+      <SearchBar/>
+      </div>
     </div>
   );
 };
 
 export default Carousel;
-

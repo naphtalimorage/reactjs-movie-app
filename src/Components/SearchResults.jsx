@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Film from './Film';
 import './SearchReasults.css';
-
+ 
 const SearchResults = () => {
   const { query } = useParams();
   const [results, setResults] = useState([]);

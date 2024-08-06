@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import { NavLink } from "react-router-dom";
-
+import SearchBar from "./SearchBar";
 const NavBar = ({ currentPage, setCurrentPage }) => {
   return (
     <nav className="navbar">
@@ -9,12 +8,12 @@ const NavBar = ({ currentPage, setCurrentPage }) => {
       <ul className="navbar-links">
         <li
           className={currentPage === "movies" ? "active" : ""}
-          onClick={() => {
+           onClick={() => {
             setCurrentPage("movies");
           }}
         >
           Movies
-        </li>
+        </li> 
         <li
           className={currentPage === "tvshows" ? "active" : ""}
           onClick={() => {

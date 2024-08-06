@@ -1,13 +1,14 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #333;
+    background-color: #382424c0;
     padding: 10px 20px;
   }
   
   .navbar-logo {
-    font-size: 24px;
-    color: rgb(240, 7, 7);
+    font-size: 24px; 
+    color: rgb(253, 8, 8);
+    font-weight: bold;
   }
   
   .navbar-links {
@@ -17,9 +18,7 @@
     padding: 0;
   }
   
-  .navbar-links li {
-    display: inline;
-  }
+  
   
   .navbar-links li {
     color: white;
@@ -33,11 +32,12 @@
   }
   
   .navbar-links li:hover,
-  .navbar-links li:focus {
+  .navbar-links li:active {
     text-decoration: none;
   }
   
   .navbar-links li.active {
     border-bottom:  solid #e41b1b;
   }
-  
+
+
